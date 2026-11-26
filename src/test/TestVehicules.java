@@ -1,20 +1,32 @@
 package test;
 
+import vehicules.*;
+
 public class TestVehicules {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Voiture voiture = new Voiture(
+                "AA-111-BB",
+                "voiture1",
+                "modele1",
+                45.0,
+                5,
+                "Essence",
+                false
+        );
 
-        Vehicule = new Vehicule("voiture1");
+        Moto moto = new Moto(
+                "BB-222-CC",
+                "moto1",
+                "model1",
+                30.0,
+                689
+        );
 
-        System.out.println("en arret");
-        vehicule1.afficher();
+        System.out.println(voiture);
+        System.out.println(moto);
 
-        vehicule1.accelerer(50);
-
-        System.out.println("en acceleration");
-        vehicule1.afficher();
-
+        System.out.println("Permis A2/A requis : ");
     }
 }
